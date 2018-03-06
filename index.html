@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OAuth2</title>
+</head>
+<body>
+    <form action="http://localhost:8080/authorize" method="POST">
+        <input type="text" name="client_id" value="my-client-id">
+        <input type="text" name="response_type" value="token">
+        <input type="text" name="redirect_uri" value="http://localhost:8000/callback.html">
+        <input type="text" name="state" value="random-string">
+        <input type="text" name="username" value="tama">
+        <input type="text" name="password" value="tama">
+
+        <input type="submit">
+    </form>
+</body>
+</html>

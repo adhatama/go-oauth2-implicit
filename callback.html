@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Oauth2 Implicit Callback Page</title>
+  <head>
+<body>
+
+<h1>SIP TENAN</h1>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var hash = window.location.hash.substring(1);
+    console.log(hash)
+
+    let paramsString = hash
+    let searchParams = new URLSearchParams(paramsString);
+
+    console.log(searchParams.get("access_token"))
+    console.log(searchParams.get("state"))
+    console.log(searchParams.get("expires_in"))
+})
+</script>
+
+</body>
+</html>
